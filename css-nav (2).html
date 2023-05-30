@@ -1,4 +1,6 @@
 
+
+<head>
 <body>
 
 
@@ -58,7 +60,7 @@ color:white;
 font-family: sans-serif;
 list-style-type: none;
 text-decoration: none;
-width: 1900px;
+min-width: 1900px;
 font-size: 25px;
 transform: translate(0px, -6000px);
 text-align: center;
@@ -165,6 +167,7 @@ background-position: 50% 50%;
 background-size:cover;
 background-color:black ;
 display: block;
+overflow-x: hidden;
 }
 
 ::-webkit-scrollbar-button{
@@ -269,6 +272,42 @@ margin-top: -25px;
 margin-left: -100px;
 font-size: 25px;
 margin-top: -25px;
+}    
+
+
+
+
+</style>
+
+<style>
+.fade{
+        font-family: monospace;
+       color:white;
+       font-size: 20px;
+        animation-name: ani;
+        animation-duration: 20s;
+        animation-iteration-count: 1;
+        animation-play-state: running;
+    
+    }
+
+    @keyframes ani{
+0%{
+margin-left: -3500px;
+opacity: 0;
+}
+    
+
+5%{opacity: 0.5;}
+
+    10%{opacity: 1;
+    margin-left: 100px;
+    margin-top: -10px;
+    }
+}
+
+body{font-family: sans-serif;
+
 }
 </style>
 
@@ -276,10 +315,6 @@ margin-top: -25px;
 function animation(x) {
     x.classList.toggle("change")
 }
-
-
-
-
 
 </script>
 
@@ -290,7 +325,8 @@ function animation(x) {
 
 <h3 class="text-6"> other projects </h3>
 
-<div class="body" > welcome to my github porfoilio
+<div class="fade">
+<div class="body" > welcome to my github porfoilio iam mohamed Ayman
 iam a web devbloper web developer with
 <br>
 4 years of expernice ihave 
@@ -298,9 +334,9 @@ iam a web devbloper web developer with
 made alot of ui/ux projects 
  to check out the best ui/ux  projects that i have 
  <br>
+</div>
  the best projects that i have made are below 
 
-</div>
     <br>
     <br>
 <br>
@@ -310,7 +346,7 @@ made alot of ui/ux projects
  Emus4ios
 
 </h1>
-<div class="move-text">
+<div class="move-text" class="fade">
 <br>
 this is an ios tweaked appstore that allows you to
 <br>
@@ -337,11 +373,13 @@ the ios archive
 <br>
 <br>
 <br>
-<div class="move-text2">
+<div class="move-text2" class="fade" >
 <br>
+<div class="fade">
 this is an ios tweaked appstore that allows you to
 <br>
 sideload ios emulators  out side of the appstore 
+</div>
 <br>
 <br>
 </div>
@@ -357,7 +395,7 @@ sideload ios emulators  out side of the appstore
 </h1>
 <hr>
 <div class="a1">
-<li>html</li>
+<li>html5</li>
 </div>
 <div class="a2">
 <li>css</li>
@@ -365,4 +403,6 @@ sideload ios emulators  out side of the appstore
 <div class="a3">
 <li>javascript</li>
 </div>
-</hr>
+<hr>
+</head>
+</body>
